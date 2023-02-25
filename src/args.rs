@@ -10,7 +10,7 @@ pub struct Args {
 
     /// Path of the wordlist that contains shared secret keys.
     #[arg(short, long)]
-    pub wordlist: PathBuf,
+    pub wordlist: Option<PathBuf>,
 
     /// Serial number of the Firebox.
     #[arg(long = "sn")]
