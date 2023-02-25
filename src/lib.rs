@@ -35,8 +35,8 @@ fn check_secret(secret: &str, args: &Args) -> Option<String> {
 
 /// Main brute force routine.
 pub fn run(args: &Args) -> Result<Option<String>> {
-    if let Some(wordlist) = &args.wordlist {
-        let mut reader = BufReader::open(wordlist)?;
+    if let Some(input_file) = &args.input_file {
+        let mut reader = BufReader::open(input_file)?;
         let mut buffer = String::new();
         while let Some(line) = reader.read_line(&mut buffer) {
             let secret = match line {

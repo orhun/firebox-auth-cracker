@@ -4,13 +4,13 @@ use std::path::PathBuf;
 #[derive(Parser)]
 #[command(author, version, about)]
 pub struct Args {
-    /// Checksum value.
+    /// Authentication signature.
     #[arg(short, long = "sig")]
     pub sig: String,
 
-    /// Path of the wordlist that contains shared secret keys.
-    #[arg(short, long)]
-    pub wordlist: Option<PathBuf>,
+    /// Input file.
+    #[arg(short, long, name = "INPUT")]
+    pub input_file: Option<PathBuf>,
 
     /// Serial number of the Firebox.
     #[arg(long = "sn")]
