@@ -1,6 +1,7 @@
 use clap::Parser;
 use std::path::PathBuf;
 
+/// Command-line arguments.
 #[derive(Parser)]
 #[command(author, version, about)]
 pub struct Args {

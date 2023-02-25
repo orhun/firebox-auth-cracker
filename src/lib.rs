@@ -33,7 +33,7 @@ fn check_secret(secret: &str, args: &Args) -> Option<String> {
     (sig == args.sig).then_some(secret.to_string())
 }
 
-/// Main brute force routine.
+/// Main brute-force routine.
 pub fn run(args: &Args) -> Result<Option<String>> {
     if let Some(input_file) = &args.input_file {
         let mut reader = BufReader::open(input_file)?;

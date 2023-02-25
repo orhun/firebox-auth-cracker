@@ -14,7 +14,7 @@ impl BufReader {
         Ok(Self { reader })
     }
 
-    /// Reads the line.
+    /// Reads the next line.
     pub fn read_line<'buf>(
         &mut self,
         buffer: &'buf mut String,
