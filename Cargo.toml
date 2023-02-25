@@ -1,9 +1,12 @@
 [package]
-name = "watchguard-bruteforce"
+name = "firebox-auth-cracker"
 version = "0.1.0"
 description = "A CLI tool to brute force the authentication signature of WatchGuard's Firebox"
 authors = ["Orhun Parmaksız <orhunparmaksiz@gmail.com>"]
 license = "MIT OR Apache-2.0"
+readme = "README.md"
+homepage = "https://github.com/orhun/firebox-auth-cracker"
+repository = "https://github.com/orhun/firebox-auth-cracker"
 edition = "2021"
 
 [dependencies]

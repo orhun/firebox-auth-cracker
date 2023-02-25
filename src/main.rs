@@ -1,9 +1,9 @@
 use clap::Parser;
-use watchguard_bruteforce::args::Args;
+use firebox_auth_cracker::args::Args;
 
 fn main() {
     let args = Args::parse();
-    match watchguard_bruteforce::run(&args) {
+    match firebox_auth_cracker::run(&args) {
         Ok(result) => match result {
             Some(secret) => {
                 println!("Secret found!!! -> {secret}")
