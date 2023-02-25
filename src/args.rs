@@ -6,17 +6,21 @@ use std::path::PathBuf;
 pub struct Args {
     /// Checksum value.
     #[arg(short, long = "sig")]
-    signature: String,
+    pub sig: String,
 
     /// Path of the wordlist that contains shared secret keys.
     #[arg(short, long)]
-    wordlist: PathBuf,
+    pub wordlist: PathBuf,
 
     /// Serial number of the Firebox.
     #[arg(long = "sn")]
-    serial: String,
+    pub sn: String,
+
+    /// Timestamp for the request.
+    #[arg(short, long = "ts")]
+    pub ts: String,
 
     /// MAC address of the client.
     #[arg(short, long)]
-    mac: String,
+    pub mac: String,
 }

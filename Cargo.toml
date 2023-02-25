@@ -8,6 +8,9 @@ edition = "2021"
 
 [dependencies]
 clap = { version = "4.1.6", features = ["derive"] }
+sha1 = "0.10.5"
+hex = "0.4.3"
+thiserror = "1.0.38"
 
 [profile.dev]
 opt-level = 0
