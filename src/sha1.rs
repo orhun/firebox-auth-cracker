@@ -5,7 +5,7 @@ pub fn sha1_hash(data: &[u8]) -> String {
     let mut hasher = Sha1::new();
     hasher.update(data);
     let result = hasher.finalize();
-    hex::encode(&result)
+    hex::encode(result)
 }
 
 #[cfg(test)]
