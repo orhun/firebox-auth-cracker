@@ -1,3 +1,7 @@
+use clap::Parser;
+use watchguard_bruteforce::args::Args;
+
 fn main() {
-    println!("Hello, world!");
+    let args = Args::parse();
+    watchguard_bruteforce::run(&args);
 }
